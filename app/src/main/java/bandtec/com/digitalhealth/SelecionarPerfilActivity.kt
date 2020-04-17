@@ -3,7 +3,7 @@ package bandtec.com.digitalhealth
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class SelecionarPerfil : AppCompatActivity() {
+class SelecionarPerfilActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

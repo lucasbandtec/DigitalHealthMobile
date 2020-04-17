@@ -3,10 +3,10 @@ package bandtec.com.digitalhealth
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class DigitalHealth : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_digital_health)
+        setContentView(R.layout.activity_login_paciente)
     }
 }

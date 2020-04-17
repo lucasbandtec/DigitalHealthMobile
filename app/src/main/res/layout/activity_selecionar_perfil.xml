@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelecionarPerfilActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:src="@drawable/logo2"
+    app:layout_constraintEnd_toEndOf="@+id/imageView"
+    app:layout_constraintStart_toStartOf="@+id/imageView"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/idlogo"
+    app:layout_constraintBottom_toTopOf="@+id/textoselecione"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Selecione seu perfil"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/btnpaciente"
+        android:textStyle="bold"
+        android:id="@+id/textoselecione"
+        />
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Paciente"
+        android:textColor="#FFF"
+        android:background="@drawable/btn_arredondar"
+        android:id="@+id/btnpaciente"
+        app:layout_constraintBottom_toTopOf="@+id/btnmedico"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        />
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Medico"
+        android:textColor="#FFF"
+        android:background="@drawable/btn_arredondar"
+        android:id="@+id/btnmedico"
+        app:layout_constraintBottom_toTopOf="@+id/btnfarmaceutico"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        />
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Farmaceutico"
+        android:textColor="#FFF"
+        android:background="@drawable/btn_arredondar"
+        android:id="@+id/btnfarmaceutico"
+        app:layout_constraintBottom_toBottomOf="@id/margin_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margin_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
