@@ -3,4 +3,22 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="background">#8B2A2A</color>
+    <color name="background_input">#5C2323</color>
+    <color name="font_input">#9C8383</color>7E0E0E
+    <color name="borda_foto">#7E0E0E</color>
+
+    <color name="branco">#FFF</color>
+    <color name="preto">#000000</color>
+
+    <color name="background_receita_a">#F8F274</color>
+    <color name="background_receita_a_prescricao">#FFF3B5</color>
+
+    <color name="background_receita_b">#C7EAFB</color>
+    <color name="background_receita_b_prescricao">#D0E2EB</color>
+
+    <color name="background_receita_c">#FFF</color>
+    <color name="background_receita_c_prescricao">#E5E2E2</color>
+
 </resources>

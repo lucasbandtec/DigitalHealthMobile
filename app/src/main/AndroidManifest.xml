@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginPacienteActivity"></activity>
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".PesquisarPacienteActivity"></activity>
+        <activity android:name=".FarmPesquisarPacienteActivity" />
+        <activity android:name=".MinhasReceitasPacienteActivity" />
+        <activity android:name=".LoginPacienteActivity" />
         <activity android:name=".LoginFarmaceuticoActivity" />
         <activity android:name=".SelecionarPerfilActivity" />
         <activity android:name=".DigitalHealthActivity" />
