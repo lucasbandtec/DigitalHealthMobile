@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".PesquisarPacienteActivity"></activity>
+        <activity android:name=".ReceitaAVisualizarDescricaoActivity"></activity>
+        <activity android:name=".ReceitaBVisualizarDescricaoActivity" />
+        <activity android:name=".ReceitaCVisualizarDescricaoActivity" />
+        <activity android:name=".PerfilPacienteActivity" />
+        <activity android:name=".MeuHistoricoPacienteActivity" />
+        <activity android:name=".PesquisarPacienteActivity" />
         <activity android:name=".FarmPesquisarPacienteActivity" />
         <activity android:name=".MinhasReceitasPacienteActivity" />
         <activity android:name=".LoginPacienteActivity" />
