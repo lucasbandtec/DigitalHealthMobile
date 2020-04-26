@@ -58,81 +58,76 @@
             >
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
-                android:background="@drawable/scroll_background"
                 android:id="@+id/btn_receita1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:layout_gravity="center"
+                android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF"
 
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
-                android:background="@drawable/scroll_background"
                 android:id="@+id/btn_receita2"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_receita3"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_receita4"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_receita5"
-                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
-                android:background="@drawable/scroll_background"
                 android:id="@+id/btn_receita6"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                />
-            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
-                android:textColor="#FFF"
-                android:background="@drawable/scroll_background"
-                android:id="@+id/btn_receita7"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_receita7"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/scroll_background"
+                android:text="Receita 1"
+                android:textColor="#FFF" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>

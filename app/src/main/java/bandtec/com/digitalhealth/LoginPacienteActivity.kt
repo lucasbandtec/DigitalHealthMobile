@@ -1,36 +1,57 @@
 package bandtec.com.digitalhealth
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatTextView
-import br.com.concretesolutions.canarinho.formatador.FormatadorCPFCNPJ
-import kotlinx.android.synthetic.main.activity_login_paciente.*
+import android.view.View
+import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
 
 class LoginPacienteActivity : AppCompatActivity() {
+        lateinit var edtUsuario : EditText;
+        lateinit var edtSenha : EditText;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_paciente)
 
-        findViewById<AppCompatButton>(R.id.btn_entrar).setOnClickListener {  }
-        val cpf = findViewById<AppCompatTextView>(R.id.input_cpf)
-        cpf.addTextChangedListener(object: TextWatcher{
 
-            override fun afterTextChanged(s: Editable?) {
-            }
+    }
 
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
+    val  usuario = "123456789"
+    val senha = "1234"
 
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                cpf.setText(FormatadorCPFCNPJ.CPF.formata(s.toString()))
-            }
+    fun irtelaPerfilPaciente (v: View){
+        val telaPacienteHome = Intent(this, PerfilPacienteActivity:: class.java)
 
-        })
+        val edtUsuario = findViewById<EditText>(R.id.input_cpf).text.toString()
+        val edtSenha = findViewById<EditText>(R.id.input_senha).text.toString()
 
+
+//        if(edtUsuario == usuario && edtSenha == senha){
+//            Toast.makeText(this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show()
+//        }else {
+//            Toast.makeText(this, "Usuário ou senha INVÁLIDOS!", Toast.LENGTH_LONG).show()
+//        }
+
+
+        if(edtUsuario.equals(usuario) && edtSenha.equals(senha)){
+            Toast.makeText(this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show()
+        }else {
+            Toast.makeText(this, "Usuário ou senha INVÁLIDOS!", Toast.LENGTH_LONG).show()
+        }
+
+
+        startActivity(telaPacienteHome)
+    }
+
+
+
+
+    fun voltarSelecionePerfil(v: View){
+
+        finish()
     }
 
 

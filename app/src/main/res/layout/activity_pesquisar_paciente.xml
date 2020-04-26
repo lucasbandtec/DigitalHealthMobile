@@ -30,7 +30,7 @@ android:background="@color/background">
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginStart="46dp"
     android:layout_marginEnd="46dp"
-    android:layout_marginBottom="16dp"
+    android:layout_marginBottom="25dp"
     android:id="@+id/input_pesquisa"
     android:background="@drawable/background_input"
     android:hint="Digite o CPF do Paciente"
@@ -51,6 +51,7 @@ android:background="@color/background">
     app:layout_constraintBottom_toTopOf="@id/margin_bottom"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
+    android:onClick="irTelaPacienteFarmaceutico"
     />
 
 

@@ -87,6 +87,7 @@
         android:id="@+id/btn_voltar"
         app:layout_constraintBottom_toTopOf="@id/margin_bottom"
         app:layout_constraintStart_toStartOf="@+id/input_senha"
+        android:onClick="voltarSelecionePerfil"
         />
 
 
@@ -101,6 +102,7 @@
         android:id="@+id/btn_entrar"
         app:layout_constraintBottom_toTopOf="@id/margin_bottom"
         app:layout_constraintEnd_toEndOf="@+id/input_senha"
+        android:onClick="irtelaPerfilPaciente"
         />
 
 

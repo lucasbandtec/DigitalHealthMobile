@@ -60,7 +60,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
+                android:text="Hospital I "
                 android:textColor="#FFF"
                 android:background="@drawable/scroll_background"
                 android:id="@+id/btn_receita1"
@@ -72,7 +72,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Receita 1"
+                android:text="Hospital II "
                 android:textColor="#FFF"
                 android:background="@drawable/scroll_background"
                 android:id="@+id/btn_receita2"

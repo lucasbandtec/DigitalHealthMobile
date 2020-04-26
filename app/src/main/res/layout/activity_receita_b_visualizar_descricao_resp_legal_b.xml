@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceitaBVisualizarDescricaoRespLegalBActivity"
+    android:background="@color/background">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/receita_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receita B"
+            android:textColor="@color/branco"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="85dp"
+            android:src="@drawable/icon_voltar"
+            android:id="@+id/btn_voltar"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/receita_c"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".12"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/margin_bot"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".96"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/visualizar_descricao"
+            android:background="@drawable/fundo_receita_b"
+            app:layout_constraintBottom_toTopOf="@+id/btn_proximo"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_proximo"
+            android:id="@+id/btn_proximo"
+            android:text="Proximo"
+            app:layout_constraintBottom_toBottomOf="@+id/margin_bot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="CPF"
+            android:textStyle="bold"
+            android:textColor="@color/preto"
+            android:id="@+id/text_cpf"
+            app:layout_constraintBottom_toTopOf="@+id/text_descricao_cpf"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="467.355.938-73"
+            android:textColor="@color/preto"
+            android:id="@+id/text_descricao_cpf"
+            app:layout_constraintBottom_toBottomOf="@+id/visualizar_descricao"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginBottom="90dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Igor Johann P Levino"
+            android:textSize="20sp"
+            android:textColor="@color/preto"
+            android:id="@+id/text_descricao_nome"
+            app:layout_constraintBottom_toTopOf="@+id/text_cpf"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Nome"
+            android:textStyle="bold"
+            android:textColor="@color/preto"
+            android:id="@+id/text_nome"
+            app:layout_constraintBottom_toTopOf="@+id/text_descricao_nome"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="CPF"
+            android:textStyle="bold"
+            android:textColor="@color/preto"
+            android:id="@+id/text_cpfDois"
+            app:layout_constraintBottom_toTopOf="@+id/text_descricao_cpfDois"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="987,356,111-98"
+            android:textColor="@color/preto"
+            android:id="@+id/text_descricao_cpfDois"
+            app:layout_constraintBottom_toBottomOf="@+id/text_nome"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucas Souza"
+            android:textSize="20sp"
+            android:textColor="@color/preto"
+            android:id="@+id/text_descricao_nomeDois"
+            app:layout_constraintBottom_toTopOf="@+id/text_cpfDois"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Nome"
+            android:textStyle="bold"
+            android:textColor="@color/preto"
+            android:id="@+id/text_nomeDois"
+            app:layout_constraintBottom_toTopOf="@+id/text_descricao_nomeDois"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Responsaveis Legais"
+            android:textStyle="bold"
+            android:textColor="@color/preto"
+            android:id="@+id/responsaveis_legais"
+            app:layout_constraintBottom_toTopOf="@+id/text_nomeDois"
+            app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="40dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ReceitaAVisualizarDescricaoActivity"></activity>
+        <activity android:name=".ReceitaCVisualizarDescricaoRespLegalActivity"></activity>
+        <activity android:name=".ReceitaBVisualizarDescricaoRespLegalBActivity" />
+        <activity android:name=".ReceitaAVisualizarDescricaoRespLegalActivity" />
+        <activity android:name=".PerfilPacienteFarmaceuticoReceitasActivity" />
+        <activity android:name=".PerfilPacienteFarmaceuticoEntrarActivity" />
+        <activity android:name=".PerfilFarmaceuticoActivity" />
+        <activity android:name=".ReceitaAVisualizarDescricaoActivity" />
         <activity android:name=".ReceitaBVisualizarDescricaoActivity" />
         <activity android:name=".ReceitaCVisualizarDescricaoActivity" />
         <activity android:name=".PerfilPacienteActivity" />

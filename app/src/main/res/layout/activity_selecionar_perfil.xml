@@ -51,6 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnmedico"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
+        android:onClick="irTelaPaciente"
         />
 
     <Button
@@ -76,6 +77,7 @@
         app:layout_constraintBottom_toBottomOf="@id/margin_bottom"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
+        android:onClick="irTelaFarmaceutico"
 
         />
 
