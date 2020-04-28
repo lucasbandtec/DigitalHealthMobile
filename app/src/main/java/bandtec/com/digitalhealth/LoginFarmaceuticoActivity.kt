@@ -59,5 +59,11 @@ class LoginFarmaceuticoActivity : AppCompatActivity() {
 
 
         startActivity(telaFarmaceuticoHome)
+
+
+    }
+    fun voltarSelecionePerfil(v: View){
+
+        finish()
     }
 }

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceitaAPreencherDescricaoRespLegalActivity"
+    android:background="@color/background">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/texto_tipoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receita A"
+        android:textColor="@color/branco"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icon_voltar"
+        android:id="@+id/btn_voltar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/margin_top"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:orientation="vertical"
+                android:background="@drawable/fundo_receita_a"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Responsável"
+                    android:textColor="#070707"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_responsavel1Paciente"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="Digite o nome do responsável legal"
+                    android:textColorHint="#070707"
+                    android:textColor="#070707"
+                    android:id="@+id/responsavel1_Paciente"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPF"
+                    android:textColor="#070707"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_responsavelCpf1Paciente"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
+                    android:hint="Digite o CPF do responsável legal"
+                    android:id="@+id/responsavelCpf1_Paciente"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Responsável"
+                    android:textColor="#070707"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_responsavel2Paciente"
+                    android:enabled="false"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="Digite o nome do responsável legal"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
+                    android:id="@+id/responsavel2_Paciente"
+                    android:enabled="false"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPF"
+                    android:textColor="#070707"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_responsavelCpf2Paciente"
+                    android:enabled="false"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="Digite o CPF do responsável legal"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
+                    android:id="@+id/responsavelCpf2_Paciente"
+                    android:enabled="false"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Adicionar     +"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_arredondar"
+                    android:id="@+id/btn_add_responsavel"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Próximo"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@drawable/btn_arredondar"
+                android:id="@+id/btn_próximo"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

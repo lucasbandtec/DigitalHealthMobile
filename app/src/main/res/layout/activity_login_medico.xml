@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFarmaceuticoActivity"
-    android:background="#000000">
+    tools:context=".LoginMedicoActivity"
+    android:background="@color/preto">
+
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
@@ -25,21 +26,21 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/idlogo"
-        app:layout_constraintBottom_toTopOf="@+id/texto_area_farmaceutico"
+        app:layout_constraintBottom_toTopOf="@+id/texto_area_medico"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Área Farmaceutico"
+        android:text="Área Médico"
         android:textColor="#FFF"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintBottom_toTopOf="@+id/input_cnpj"
+        app:layout_constraintBottom_toTopOf="@+id/input_crm"
         android:textStyle="bold"
-        android:id="@+id/texto_area_farmaceutico"
+        android:id="@+id/texto_area_medico"
         />
 
     <androidx.appcompat.widget.AppCompatEditText
@@ -51,9 +52,9 @@
         android:layout_marginStart="46dp"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="16dp"
-        android:id="@+id/input_cnpj"
+        android:id="@+id/input_crm"
         android:background="@drawable/background_input"
-        android:hint="CNPJ"
+        android:hint="CRM"
         android:textColorHint="#9C8383"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
@@ -61,34 +62,20 @@
         />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/input_senha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="46dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/input_senha"
         android:background="@drawable/background_input"
         android:hint="Senha"
+        android:textColorHint="#9C8383"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
-        android:textColorHint="#9C8383"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/checkBox"
-        android:layout_marginBottom="20dp"
-         />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lembrar Usuário"
-        app:layout_constraintBottom_toTopOf="@id/btn_voltar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="salvarDados"
-        android:layout_marginBottom="20dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -101,7 +88,6 @@
         android:id="@+id/btn_voltar"
         app:layout_constraintBottom_toTopOf="@id/margin_bottom"
         app:layout_constraintStart_toStartOf="@+id/input_senha"
-        android:onClick="voltarSelecionePerfil"
         />
 
 
@@ -116,7 +102,6 @@
         android:id="@+id/btn_entrar"
         app:layout_constraintBottom_toTopOf="@id/margin_bottom"
         app:layout_constraintEnd_toEndOf="@+id/input_senha"
-        android:onClick="irtelaPerfilFarmaceutico"
         />
 
 
@@ -125,9 +110,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/margin_bottom"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".80"
+        app:layout_constraintGuide_percent=".75"
         />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

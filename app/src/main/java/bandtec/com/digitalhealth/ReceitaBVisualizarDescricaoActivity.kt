@@ -13,7 +13,7 @@ class ReceitaBVisualizarDescricaoActivity : AppCompatActivity() {
     }
 
     fun irTelaResponsavelLegalReceitaB(v: View){
-        val telaResponsavelLegal_B = Intent(this, ReceitaBVisualizarDescricaoRespLegalBActivity::class.java)
+        val telaResponsavelLegal_B = Intent(this, ReceitaBVisualizarDescricaoRespLegalActivity::class.java)
         startActivity(telaResponsavelLegal_B)
 
     }

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceitaCPreencherMedReceitadoActivity"
+    android:background="@color/background">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/texto_tipoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receita C"
+        android:textColor="@color/branco"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icon_voltar"
+        android:id="@+id/btn_voltar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/margin_top"
+
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:orientation="vertical"
+                android:background="@drawable/fundo_receita_c"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Medicamento Receitado"
+                    android:textColor="#070707"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_medicamento_receitado"
+                    android:layout_gravity="center"
+                    />
+
+                <Spinner
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
+                    android:layout_marginTop="10dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Prescrição"
+                    android:textColor="#070707"
+                    android:textSize="25sp"
+                    android:layout_marginTop="50dp"
+                    android:textStyle="bold"
+                    android:id="@+id/texto_precricao"
+                    android:layout_gravity="center"
+                    />
+                <ScrollView
+                    android:id="@+id/ScrollView01"
+                    android:layout_width="330dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@color/background_receita_c_prescricao"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Digite aqui a periodicidade "
+                        android:textColor="#070707"
+                        android:textColorHint="#070707"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                </ScrollView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Assinar"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@drawable/btn_arredondar"
+                android:id="@+id/btn_próximo"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

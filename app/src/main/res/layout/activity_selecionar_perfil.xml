@@ -78,7 +78,6 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         android:onClick="irTelaFarmaceutico"
-
         />
 
     <androidx.constraintlayout.widget.Guideline

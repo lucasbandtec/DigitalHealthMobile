@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelecionarReceitaCActivity"
+    android:background="@color/background">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/texto_tipoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo C"
+        android:textColor="@color/branco"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icon_voltar"
+        android:id="@+id/btn_voltar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/margin_top"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="C1
+                Substâncias sujeitas
+                a controle especial"
+                android:textColor="#FFF"
+                android:background="@drawable/scroll_background"
+                android:id="@+id/btn_receitaC1"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="C2
+                Retinoicas de uso
+                tópico"
+                android:textColor="#FFF"
+                android:background="@drawable/scroll_background"
+                android:id="@+id/btn_receitaC2"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="C3
+                Retinoicas de uso
+                sistêmico"
+                android:textColor="#FFF"
+                android:background="@drawable/scroll_background"
+                android:id="@+id/btn_receitaC3"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="C4
+                Imunosopressoras"
+                android:textColor="#FFF"
+                android:background="@drawable/scroll_background"
+                android:id="@+id/btn_receitaC4"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="C5
+                Anabolizantes"
+                android:textColor="#FFF"
+                android:background="@drawable/scroll_background"
+                android:id="@+id/btn_receitaC5"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
