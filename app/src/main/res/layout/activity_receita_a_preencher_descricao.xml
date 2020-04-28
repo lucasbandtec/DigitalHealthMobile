@@ -41,142 +41,232 @@
         app:layout_constraintGuide_percent=".12"
         />
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/margin_top"
-        >
+        android:background="@drawable/fundo_receita_a"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:id="@+id/visualizar_descricao"
+        app:layout_constraintBottom_toTopOf="@+id/btn_proximo"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_proximo"
+            android:id="@+id/btn_proximo"
+            android:text="Proximo"
+            app:layout_constraintBottom_toBottomOf="@+id/margin_bot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="350dp"
-                android:layout_height="450dp"
-                android:orientation="vertical"
-                android:background="@drawable/fundo_receita_a"
-                android:layout_gravity="center"
-                android:layout_marginTop="80dp"
-                >
-
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Paciente"
-                    android:textColor="#070707"
-                    android:textSize="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:textStyle="bold"
-
-                    android:id="@+id/texto_nomePaciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="15dp"
-                    android:hint="Digite o nome do Paciente"
-                    android:textColor="#070707"
-                    android:textColorHint="#070707"
-                    android:id="@+id/nome_Paciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CPF"
-                    android:textColor="#070707"
-                    android:textSize="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:textStyle="bold"
-                    android:id="@+id/texto_cpfPaciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="15dp"
-                    android:hint="Digite o CPF do Paciente"
-                    android:textColor="#070707"
-                    android:textColorHint="#070707"                android:inputType="number"
-                    android:id="@+id/cpf_Paciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Endereço"
-                    android:textColor="#070707"
-                    android:textSize="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:textStyle="bold"
-                    android:id="@+id/texto_enderecoPaciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="15dp"
-                    android:hint="Digite o endereço do Paciente"
-                    android:textColor="#070707"
-                    android:textColorHint="#070707"
-                    android:id="@+id/endereço_Paciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Telefone"
-                    android:textColor="#070707"
-                    android:textSize="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:textStyle="bold"
-                    android:id="@+id/texto_telefonePaciente"
-                    />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="15dp"
-                    android:hint="Digite o telefone do Paciente"
-                    android:textColor="#070707"
-                    android:textColorHint="#070707"
-                    android:inputType="number"
-                    android:id="@+id/telefone_Paciente"
-                    />
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            />
 
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Próximo"
-                android:textColor="#F6F4F4"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:background="@drawable/btn_arredondar"
-                android:id="@+id/btn_próximo"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paciente"
+        android:textColor="@color/preto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/texto_nome_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/nome_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.core.widget.NestedScrollView>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Nome do Paciente"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/preto"
+        android:id="@+id/nome_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/texto_cpf_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textColor="@color/preto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/texto_cpf_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/cpf_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="CPF do Paciente"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/preto"
+        android:inputType="number"
+        android:id="@+id/cpf_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/texto_endereco_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:textColor="@color/preto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/texto_endereco_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/endereco_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Endereço do Paciente"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/preto"
+        android:id="@+id/endereco_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/texto_telefone_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textColor="@color/preto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/texto_telefone_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/telefone_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="20dp"
+        android:hint="Telefone do Paciente"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/preto"
+        android:inputType="number"
+        android:id="@+id/telefone_paciente"
+        app:layout_constraintBottom_toBottomOf="@+id/visualizar_descricao"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="SP"
+        android:textColor="@color/preto"
+        android:id="@+id/text_descricao_uf"
+        app:layout_constraintBottom_toTopOf="@+id/texto_nome_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/text_uf"
+        android:layout_marginLeft="20dp"
+        android:text="UF"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_descricao_uf"
+        app:layout_constraintLeft_toLeftOf="@+id/visualizar_descricao" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="DF343"
+        android:textColor="@color/preto"
+        android:id="@+id/text_descricao_rc"
+        app:layout_constraintBottom_toTopOf="@+id/texto_nome_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/text_descricao_uf"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/text_rc"
+        android:text="RC"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_descricao_rc"
+        app:layout_constraintLeft_toLeftOf="@+id/text_uf"
+        android:layout_marginLeft="100dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="32423432"
+        android:textColor="@color/preto"
+        android:id="@+id/text_descricao_crm"
+        app:layout_constraintBottom_toTopOf="@+id/texto_nome_paciente"
+        app:layout_constraintLeft_toLeftOf="@+id/text_descricao_rc"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/text_crm"
+        android:text="CRM"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_descricao_rc"
+        app:layout_constraintLeft_toLeftOf="@+id/text_rc"
+        android:layout_marginLeft="100dp"
+        />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margin_bot"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".96"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
